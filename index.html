@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankan Dash | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <!-- <img src="media/myimg.jpg" alt="Ankan's Image" class="header-image"> -->
+            <div class="header-info">
+                <h1 class="header-title">Ankan Dash</h1>
+                <p class="header-description">PhD candidate - Computer Vision Researcher</p>
+            </div>
+        </div>
+        <nav class="top-navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="https://github.com/ankan2709" target="_blank">GitHub</a></li>
+                <li class="nav-item"><a href="https://www.linkedin.com/in/ankan-dash" target="_blank">LinkedIn</a></li>
+                <!-- <li class="nav-item"><a href="#scholar">Scholar</a></li> -->
+                <!-- Add more sections/links as needed -->
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Ph.D. in Computer Science</h3>
+            <p><strong>New Jersey Institute of Technology</strong>, Newark, NJ</p>
+            <p>January 2020 - Present</p>
+        </div>
+        
+        <div class="education-item">
+            <h3>Master of Science in Aerospace Engineering</h3>
+            <p><strong>University of Illinois at Urbana - Champaign</strong>, Champaign, IL</p>
+            <p>August 2017 - December 2018</p>
+        </div>
+        
+        <!-- Add more education items as needed -->
+    </section>
+    
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="experience-item">
+            <h3>Computer Vision Intern</h3>
+            <p><strong>Samsung Research America</strong>, Mountain View, CA</p>
+            <p>May 2023 - August 2023</p>
+            <ul>
+                <li>Successfully developed the POC for implementation of Apple’s EyeSight feature. (Supervisor: Mr. Aamer Khani, Director Engineering - ML, AR, VR)</li>
+                <li>My implementation does not require any 3D scan of the face.</li>
+                <li>The approach though simpler the output is of very fidelity.</li>
+            </ul>
+        </div>
+        
+        <div class="experience-item">
+            <h3>AI – ML Engineer Intern</h3>
+            <p><strong>Samsung Research America</strong>, Mountain View, CA</p>
+            <p>June 2022 - August 2022</p>
+            <ul>
+                <li>Successfully built deep learning-based computer vision models for Samsung AR platform (Supervisor: Mr. Aamer Khani, Director Engineering - ML, AR, VR).</li>
+                <li>Developed image and video inpainting methods for improving LSR output for AR/VR applications.</li>
+            </ul>
+        </div>
+        
+
+        <div class="experience-item">
+            <h3>Graduate Research Assistant </h3>
+            <p><strong>New Jersey Institute of Technology</strong>, Newark, NJ</p>
+            <p>January 2021 - Present</p>
+            <ul>
+                <li>Conduct research in the field of Computer Vision and Deep Learning applications in different domains.</li>
+            </ul>
+        </div>
+
+        
+        <div class="experience-item">
+            <h3>Graduate Research Assistant </h3>
+            <p><strong>University of Illinois at Urbana-Champaign</strong>, Champaign, IL</p>
+            <p>January 2021 - Present</p>
+            <ul>
+                <li>Developed PIV, PTV and Deep Learning models for flow field predictions over airfoils.</li>
+            </ul>
+        </div>
+        
+        <!-- Add more work experience items as needed -->
+    </section>
+    
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>POC of Apple’s EyeSight features for VR headsets, Samsung Research America</h3>
+            <p><strong>Description:</strong> 
+                <ul>
+                <li>Implemented the POC for Apple’s EyeSight feature.</li>
+                <li>My approach does not require any 3D face scan to be taken by the user. This greatly simplifies the overall experience of using VR headset.</li>
+                <li>My approach produces much richer facial expression and looks more natural </li>
+                </ul>
+            </p>
+            <p><strong>Technologies Used:</strong> Computer Vision and Deep Learning</p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project-repo" target="_blank">Project Repo</a></p>
+            <!-- Add videos for comparison -->
+            <div class="video-container">
+                <div class="video">
+                    <h4>Output form my approach</h4>
+                    <video width="320" height="240" muted autoplay loop>
+                        <source src="media\ssight.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <div class="video">
+                    <h4>Apple's EyeSight Demo</h4>
+                    <video width="320" height="240"  muted autoplay loop>
+                        <source src="media\eyesight.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <h3>HI-GAN: RGBD inpainting using Hierarchical GAN and auxiliary inputs</h3>
+            <p><strong>Description:</strong>
+                <ul>
+                    <li>Developed HI-GAN or Hierarchical GAN model for RGB-D inpaiting with novel Hierarical GAN model.</li>
+                    <li>Hierarchical-GAN, a novel approach comprising three GANs in a hierarchical fashion for RGBD inpainting.</li>
+                    <li> EdgeGAN and LabelGAN process edge and segmentation label images respectively, 
+                        while CombinedGAN combines their latent representation outputs and performs RGB and Depth inpainting.</li>
+                </ul>
+            </p>
+            <p><strong>Technologies Used:</strong> Computer Vision and Deep Learning.</p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project-repo" target="_blank">Project Repo</a></p>
+        </div>
+
+        <div class="project-item">
+            <h3>Computer Vision for AR/VR application, Samsung Research America</h3>
+            <p><strong>Description:</strong>
+                <ul>
+                    <li>Developed Deep Learning based Computer Vision models for improving AR/VR user experience.</li>
+                    <li>Successfully carried out image and video inpainting methods for improving LSR output for AR/VR applications.</li>
+                    <li>The developed model can perform combined RGBD inpainting.</li>
+                </ul>
+            </p>
+            <p><strong>Technologies Used:</strong> Computer Vision and Deep Learning.</p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project-repo" target="_blank">Project Repo</a></p>
+        </div>
+
+        <div class="project-item">
+            <h3>High Resolution Solar Image Generation using Generative Adversarial Networks </h3>
+            <p><strong>Description:</strong>
+                <ul>
+                    <li>Developed Deep Learning models to generate Solar images using Image-to-Image translation</li>
+                </ul>
+            </p>
+            <p><strong>Technologies Used:</strong> Computer Vision and Deep Learning.</p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project-repo" target="_blank">Project Repo</a></p>
+        </div>
+        
+        <!-- Add more project items as needed -->
+    </section>
+    
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="publication-item">
+            <h3>A review of Generative Adversarial Networks (GANs) and its applications in a wide variety of disciplines -- From Medical to Remote Sensing</h3>
+            <p><strong>Authors:</strong> •	Ankan Dash, Junyi Ye and Guiling Wang.</p>
+            <p><strong>Published in:</strong> ACM Computing Surveys (under review)</p>
+            <p><strong>Date:</strong> Month Year</p>
+            <p><strong>Link:</strong> <a href="https://doi.org/10.48550/arXiv.2110.01442" target="_blank">Publication Link</a></p>
+        </div>
+        
+        <div class="publication-item">
+            <h3>High-Resolution Solar Image Generation Using Generative Adversarial Networks</h3>
+            <p><strong>Authors:</strong> Ankan Dash, Junyi Ye, Guiling Wang and Huiran Jin </p>
+            <p><strong>Published in:</strong> Annals of Data Science</p>
+            <p><strong>Date:</strong> August 2022</p>
+            <p><strong>Link:</strong> <a href="https://doi.org/10.1007/s40745-022-00436-2" target="_blank">Publication Link</a></p>
+        </div>
+
+        <div class="publication-item">
+            <h3>Free fall of homogeneous and heterogeneous cones</h3>
+            <p><strong>Authors:</strong> Jin-Tae Kim, Yaqing Jin, Shikun Shen, Ankan Dash, and Leonardo P. Chamorro  </p>
+            <p><strong>Published in:</strong> Physical Review Fluids</p>
+            <p><strong>Date:</strong> September 2020</p>
+            <p><strong>Link:</strong> <a href="https://doi.org/10.1103/PhysRevFluids.5.093801 " target="_blank">Publication Link</a></p>
+        </div>
+        
+        <!-- Add more publication items as needed -->
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2023 Ankan Dash</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
