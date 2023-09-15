@@ -237,7 +237,7 @@ header img {
 }
 
 .project-image img {
-    max-width: 50%; /* Adjust the maximum width as needed */
+    max-width: 60%; /* Adjust the maximum width as needed */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove any default inline spacing */
     margin: 10px auto; /* Center the image and add spacing around it */
