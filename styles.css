@@ -88,17 +88,31 @@ footer {
 /* Adjust the layout of videos to appear side by side */
 .video-container {
     display: flex;
-    justify-content: center;
+    margin-top: 20px;
+    /* justify-content: center; */
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    flex-direction: column
 }
 
 .video {
-    width: 30%; /* Adjust the width as needed to control the spacing between videos */
-    margin: 10px;
+    width: 100%; /* Adjust the width as needed to control the spacing between videos */
+    margin: 10px 0;
     text-align: center;
 
 }
+
+.video video {
+    max-width: 100%; /* Ensure videos are responsive */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .video {
+        width: 80%; /* Reduce video width for screens up to 768px */
+    }
+}
+
 
 .top-navigation ul {
     list-style-type: none;
