@@ -218,6 +218,17 @@ header img {
     margin-bottom: 40px;
 }
 
+.project-image {
+    text-align: center; /* Center the image horizontally */
+}
+
+.project-image img {
+    max-width: 50%; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline spacing */
+    margin: 10px auto; /* Center the image and add spacing around it */
+}
+
 .project-item h3 {
     font-size: 24px;
     margin: 10px 0;
@@ -251,5 +262,38 @@ section#contact {
 }
 
 li {
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+
+
+.skills-section {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    max-width: 70%;
+    text-align: left; /* Align skills text to the left */
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skill-circle {
+    background-color: #fff; /* Circular box background color */
+    color: #333; /* Circular box text color */
+    border-radius: 50%; /* Makes the box circular */
+    width: 40px; /* Circular box width */
+    height: 40px; /* Circular box height */
+    font-size: 20px; /* Adjust the font size as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Spacing between the circular box and text */
+}
+
+.skill-description {
     font-size: 18px; /* Adjust the font size as needed */
 }
