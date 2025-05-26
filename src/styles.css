@@ -1153,3 +1153,16 @@ body {
     font-size: 0.9rem;
     margin: 0;
 }
+
+.advisor {
+    margin-top: 1rem;
+    font-style: italic;
+    font-size: 1rem;
+}
+.advisor a {
+    color: #007bff; /* or your theme color */
+    text-decoration: none;
+}
+.advisor a:hover {
+    text-decoration: underline;
+}
