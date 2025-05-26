@@ -3,307 +3,525 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ankan Dash | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Dr. Ankan Dash - PhD in Computer Science</title>
+    <meta name="description" content="PhD candidate specializing in Machine Learning, Computer Vision and Generative AI. View my research, publications, and academic work.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-content">
-            <!-- <img src="media/myimg.jpg" alt="Ankan's Image" class="header-image"> -->
-            <div class="header-info">
-                <h1 class="header-title">Ankan Dash</h1>
-                <p class="header-description">PhD candidate - AI, ML, Computer Vision and LLM Researcher</p>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">Dr. Ankan Dash</div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#cv" class="nav-link">CV</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>
+                        <span class="hero-name">Dr. Ankan Dash</span>
+                    </h1>
+                    <h2 class="hero-subtitle">PhD - Computer Science</h2>
+                    <p class="hero-description">
+                        Specializing in AI, Deep Learning, Computer Vision, LLMs and Generative AI. 
+                        Passionate about developing AI systems that benefit society while 
+                        advancing the frontiers of computational intelligence.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                    <div class="social-links">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/ankan-dash" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="social-link">LinkedIn</a>
+                        
+                        <!--GitHub
+                        <a href="https://github.com/yourusername" 
+                        target="_blank"
+                        rel="noopener noreferrer" 
+                        class="social-link">GitHub</a>-->
+                        
+                        <!-- Google Scholar -->
+                        <a href="https://scholar.google.com/citations?user=mpu8FLEAAAAJ&hl=en" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link">Scholar</a>
+                        
+                        <!-- Email (doesn't need target="_blank") -->
+                        <a href="ankandash18@gmail.com" class="social-link">Email</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="mypic.jpg" 
+                         alt="Dr. Ankan Dash - Professional headshot" 
+                         class="profile-image">
+                </div>
             </div>
         </div>
-        <nav class="top-navigation">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="about.html">About</a></li>
-                <li class="nav-item"><a href="contact.html">Contact</a></li>
-                <li class="nav-item"><a href="https://github.com/ankan2709" target="_blank">GitHub</a></li>
-                <li class="nav-item"><a href="https://www.linkedin.com/in/ankan-dash" target="_blank">LinkedIn</a></li>
-                <li class="nav-item"><a href="Dash_Ankan_Resume_25.pdf">Resume</a></li>
-                <!-- <li class="nav-item"><a href="#scholar">Scholar</a></li> -->
-                <!-- Add more sections/links as needed -->
-            </ul>
-        </nav>
-    </header>
-
-
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-item">
-            <h3>Ph.D. in Computer Science</h3>
-            <p><strong>New Jersey Institute of Technology</strong>, Newark, NJ</p>
-            <p><strong>Advisor: <a href="https://web.njit.edu/~gwang/">Prof. Grace Wang</a></strong></p>
-            <p>January 2020 - Present</p>
-        </div>
-        
-        <div class="education-item">
-            <h3>Master of Science in Aerospace Engineering</h3>
-            <p><strong>University of Illinois at Urbana - Champaign</strong>, Champaign, IL</p>
-            <p>August 2017 - December 2018</p>
-        </div>
-        
-        <!-- Add more education items as needed -->
     </section>
-    
 
-    <section id="experience">
-        <h2>Work Experience</h2>
-
-        <div class="experience-item">
-            <h3>AI-ML Computer Vision Intern</h3>
-            <p><strong>Samsung Research America</strong>, Mountain View, CA</p>
-            <p>May 2024 - August 2024</p>
-            <ul>
-                <li>Successfully developed real-time reverse pass-through feature. (Supervisor: Mr. Aamer Khani, Director Engineering - ML, AR, VR)</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <h3>Computer Vision Intern</h3>
-            <p><strong>Samsung Research America</strong>, Mountain View, CA</p>
-            <p>May 2023 - August 2023</p>
-            <ul>
-                <li>Successfully developed the POC for implementation of Apple’s EyeSight feature. (Supervisor: Mr. Aamer Khani, Director Engineering - ML, AR, VR)</li>
-                <li>My implementation does not require any 3D scan of the face.</li>
-                <li>The ouput of our model is of high quality and natural looking.</li>
-            </ul>
-        </div>
-        
-        <div class="experience-item">
-            <h3>AI – ML Engineer Intern</h3>
-            <p><strong>Samsung Research America</strong>, Mountain View, CA</p>
-            <p>June 2022 - August 2022</p>
-            <ul>
-                <li>Successfully built deep learning-based computer vision models for Samsung AR platform (Supervisor: Mr. Aamer Khani, Director Engineering - ML, AR, VR).</li>
-                <li>Developed image and video inpainting methods for improving LSR output for AR/VR applications.</li>
-            </ul>
-        </div>
-        
-
-        <div class="experience-item">
-            <h3>Graduate Research Assistant </h3>
-            <p><strong>New Jersey Institute of Technology</strong>, Newark, NJ</p>
-            <p>January 2021 - Present</p>
-            <ul>
-                <li>Conduct research in the field of Computer Vision and Deep Learning applications in different domains.</li>
-            </ul>
-        </div>
-
-        
-        <div class="experience-item">
-            <h3>Graduate Research Assistant </h3>
-            <p><strong>University of Illinois at Urbana-Champaign</strong>, Champaign, IL</p>
-            <p>January 2021 - Present</p>
-            <ul>
-                <li>Developed PIV, PTV and Deep Learning models for flow field predictions over airfoils.</li>
-            </ul>
-        </div>
-        
-        <!-- Add more work experience items as needed -->
-    </section>
-    
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>Eye-See-You: Reverse Pass-Through VR with Full Head Avatars (IJCAI 2025)</h3>
-            <p><strong>Description:</strong> 
-                <ul>
-                    <li>Developed a novel framework for reverse pass-through VR and one-shot full head avatar using reverse pass-through.</li>
-                    <li>Developed a new dataset for simulation of VR scenario.</li>
-                </ul>
-            </p>
-            <div class="project-image">
-                <img src="media/frameworkNewImage_revavater.png" alt="reverse pass-through output" >
-            </div>
-            <!-- <p><strong>Technologies Used:</strong> Computer Vision and Deep Learning</p> -->
-            <!-- <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project-repo" target="_blank">Project Repo</a></p> -->
-            <!-- Add videos for comparison -->
-        </div>
-        <div class="project-item">
-            <h3>Reverse Pass-through VR framework</h3>
-            <p><strong>Description:</strong> 
-                <ul>
-                    <li>Developed a general framework for reverse pass-thorugh VR.</li>
-                    <li>Implemented eye image aligment, reference based eye colorization models for this framework.</li>
-                </ul>
-            </p>
-            <div class="project-image">
-                <img src="media/reversepass.png" alt="reverse pass-through output" >
-            </div>
-            <!-- <p><strong>Technologies Used:</strong> Computer Vision and Deep Learning</p> -->
-            <!-- <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project-repo" target="_blank">Project Repo</a></p> -->
-            <!-- Add videos for comparison -->
-        </div>
-        <div class="project-item">
-            <h3>GANxNeRF: GAN based universal NeRF output refinement model framework</h3>
-            <p><strong>Description:</strong> 
-                <ul>
-                    <li>Developed a multiscale conditional GAN model to refine the outputs of any NeRF based models.</li>
-                    <li>The GAN model is NeRF model agnostic and can recover details which are generally not captured by NeRF based models.</li>
-                </ul>
-            </p>
-            <div class="project-image">
-                <img src="media/nerfvsGANimage.png" alt="GANxNeRF output">
-            </div>
-            <!-- <p><strong>Technologies Used:</strong> Computer Vision and Deep Learning</p> -->
-            <!-- <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project-repo" target="_blank">Project Repo</a></p> -->
-            <!-- Add videos for comparison -->
-        </div>
-        
-        <div class="project-item">
-            <h3>POC of Apple’s EyeSight features for VR headsets, Samsung Research America</h3>
-            <p><strong>Description:</strong> 
-                <ul>
-                <li>Implemented the POC for Apple’s EyeSight feature.</li>
-                <li>My approach does not require any 3D face scan to be taken by the user. This greatly simplifies the overall experience of using VR headset.</li>
-                <li>My approach produces much richer facial expression and looks more natural </li>
-                </ul>
-            </p>
-            <!-- <p><strong>Technologies Used:</strong> Computer Vision and Deep Learning</p> -->
-            <!-- <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project-repo" target="_blank">Project Repo</a></p> -->
-            <!-- Add videos for comparison -->
-            <div class="video-container">
-                <div class="video">
-                    <h4>Output form my approach</h4>
-                    <video width="320" height="240" muted autoplay loop>
-                        <source src="media\ssight.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="section-divider"></div>
+            
+            <div class="about-content">
+                <div class="education">
+                    <h3>Academic Background</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker teal"></div>
+                            <div class="timeline-content">
+                                <h4>PhD in Computer Science</h4>
+                                <p class="institution">New Jersey Institute of Technology(2020-2025)</p>
+                                <p class="details">Focus: Deep Learning, Computer Vision, Generative AI</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker slate"></div>
+                            <div class="timeline-content">
+                                <h4>M.S. Aerospace Engineering</h4>
+                                <p class="institution">University of Illinois at Urbana-Champaign</p>
+                                <p class="details">FEM, CFD models for flow field analysis</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker slate"></div>
+                            <div class="timeline-content">
+                                <h4>B.S. Mechanical Engineering</h4>
+                                <p class="institution">KIIT University</p>
+                                <p class="details">CFD, Machine Learning, FEM</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="video">
-                    <h4>Apple's EyeSight Demo</h4>
-                    <video width="320" height="240"  muted autoplay loop>
-                        <source src="media\eyesight.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="research-interests">
+                    <h3>Research Interests</h3>
+                    <div class="interests-grid">
+                        <div class="interest-card">
+                            <div class="interest-icon">🤖</div>
+                            <h4>AI/Machine Learning</h4>
+                            <p>Deep learning architectures and optimization</p>
+                        </div>
+                        <div class="interest-card">
+                            <div class="interest-icon">👁️</div>
+                            <h4>Computer Vision</h4>
+                            <p>Diffusion Models, GANs, ViT, Inpainting and 3D Reconstruction</p>
+                        </div>
+                        <div class="interest-card">
+                            <div class="interest-icon">🧬</div>
+                            <h4>Generative AI</h4>
+                            <p>Multimodal generation and controllable generation techniques</p>
+                        </div>
+                        <div class="interest-card">
+                            <div class="interest-icon">🔍</div>
+                            <h4>LLMs</h4>
+                            <p>Large language models, Large vision language models</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div class="project-item">
-            <h3>HI-GAN: RGBD inpainting using Hierarchical GAN and auxiliary inputs</h3>
-            <p><strong>Description:</strong>
-                <ul>
-                    <li>Developed HI-GAN model for RGB-D inpaiting.</li>
-                    <li>Hierarchical-GAN, a novel approach comprising three GANs for RGBD inpainting.</li>
-                    <li>EdgeGAN and LabelGAN process edge and segmentation label images respectively, 
-                        while CombinedGAN combines their latent representation outputs and performs RGB and Depth inpainting.</li>
-                </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">
+                A showcase of my key research and development projects, highlighting practical applications 
+                of my work in computer science and AI.
             </p>
-            <!-- <p><strong>Technologies Used:</strong> Computer Vision and Deep Learning.</p> -->
-            <!-- <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project-repo" target="_blank">Project Repo</a></p> -->
-            <div class="project-image">
-                <img src="media/higanVsPconv.png" alt="Hierarchical-GAN vs Pconv">
+
+            <div class="projects-list">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Your Project Title</h3>
+                        <p class="project-description">
+                            Brief description of your project, its goals, and what problem it solves. 
+                            This should be engaging and highlight the key contributions.
+                        </p>
+                        <div class="technologies">
+                            <h4>Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">React</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300" 
+                                 alt="Framework Architecture">
+                            <div class="image-overlay">Framework Architecture</div>
+                        </div>
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300" 
+                                 alt="Results">
+                            <div class="image-overlay">Results & Visualization</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reverse">
+                    <div class="project-content">
+                        <h3>Second Project</h3>
+                        <p class="project-description">
+                            Another project description showcasing different aspects of your research and development work.
+                        </p>
+                        <div class="technologies">
+                            <h4>Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300" 
+                                 alt="Framework Architecture">
+                            <div class="image-overlay">Framework Architecture</div>
+                        </div>
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300" 
+                                 alt="Results">
+                            <div class="image-overlay">Results & Visualization</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Third Project</h3>
+                        <p class="project-description">
+                            Description of your third major project, highlighting its unique contributions and technical achievements.
+                        </p>
+                        <div class="technologies">
+                            <h4>Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300" 
+                                 alt="Framework Architecture">
+                            <div class="image-overlay">Framework Architecture</div>
+                        </div>
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300" 
+                                 alt="Results">
+                            <div class="image-overlay">Results & Visualization</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        
         </div>
-
-        <div class="project-item">
-            <h3>Computer Vision for AR/VR application, Samsung Research America</h3>
-            <p><strong>Description:</strong>
-                <ul>
-                    <li>Developed Deep Learning based Computer Vision models for improving AR/VR user experience.</li>
-                    <li>Successfully carried out image and video inpainting methods for improving LSR output for AR/VR applications.</li>
-                    <li>The developed model can perform combined RGBD inpainting.</li>
-                </ul>
-            </p>
-            <!-- <p><strong>Technologies Used:</strong> Computer Vision and Deep Learning.</p> -->
-            <!-- <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project-repo" target="_blank">Project Repo</a></p> -->
-        </div>
-
-        <div class="project-item">
-            <h3>High Resolution Solar Image Generation using Generative Adversarial Networks </h3>
-            <p><strong>Description:</strong>
-                <ul>
-                    <li>Developed Deep Learning models to generate Solar images using Image-to-Image translation.</li>
-                </ul>
-            </p>
-            <!-- <p><strong>Technologies Used:</strong> Computer Vision and Deep Learning.</p> -->
-            <!-- <p><strong>GitHub Repository:</strong> <a href="https://github.com/yourusername/project-repo" target="_blank">Project Repo</a></p> -->
-        </div>
-        
-        <!-- Add more project items as needed -->
     </section>
-    
-    <section id="publications">
-        <h2>Publications</h2>
 
-        <!-- <div class="publication-item">
-            <h3>Attentive Partial Convolution for RGBD Image Inpainting</h3>
-            <p><strong>Authors:</strong> Ankan Dash, Guiling Wang and Tao Han.</p>
-            <p><strong>Published in:</strong> Web Conference Workshop 2024</p>
-            <p><strong>Date:</strong> May 2024</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2404.15370" target="_blank">Publication Link</a></p>
-        </div> -->
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="section-divider"></div>
 
-        <div class="publication-item">
-            <h3>Eye-See-You: Reverse Pass-Through VR with Full Head Avatars</h3>
-            <p><strong>Authors:</strong> Ankan Dash, Jingyi Gu, Guiling Wang, Chen Chen.</p>
-            <p><strong>Published in:</strong> International Joint Conference on Artificial Intelligence (IJCAI 2025)</p>
-            <p><strong>Date:</strong> April 2025</p>
-            <!-- <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2404.15370" target="_blank">Publication Link</a></p> -->
+            <div class="publications-list">
+                <div class="publication-card">
+                    <div class="publication-badge">IJCAI 2025</div>
+                    <h3>Eye-See-You: Reverse Pass-Through VR with Full Head Avatars</h3>
+                    <p class="authors"><strong>A. Dash</strong>, J. Gu, G. Wang, C. Chen</p>
+                    <p class="venue">International Joint Conference on Artificial Intelligence (IJCAI) • 2025</p>
+                    <p class="abstract">
+                        This paper presents RevAvatar, a reverse pass-through framework that leverages generative models to reconstruct 
+                        high-fidelity 2D faces and synthesize 3D head avatars from partially occluded inputs in VR, 
+                        enabling more natural social interaction and enhancing immersive communication. 
+                        <!--Our approach combines adversarial training with fairness constraints to ensure equitable AI systems 
+                        across diverse demographic groups.-->
+                    </p>
+                    <!--<div class="publication-stats">
+                        <span class="stat">👁️ 243 citations</span>
+                    </div>-->
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-badge">NAACL 2025</div>
+                    <h3>Beyond End-to-End VLMs: Leveraging Intermediate Text Representations for Superior Flowchart Understanding</h3>
+                    <p class="authors">J. Ye, <strong>A. Dash</strong>, G. Wang, W. Yin</p>
+                    <p class="venue">Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL) • 2025</p>
+                    <p class="abstract">
+                        This paper presents TEXTFLOW, a modular vision-language system that combines VLMs for extracting 
+                        structured text from flowchart images and LLMs for reasoning over the text, enhancing controllability, 
+                        explainability, and overall performance in flowchart understanding.
+                    </p>
+                    <!--<div class="publication-stats">
+                        <span class="stat">👁️ 156 citations</span>
+                    </div>-->
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-badge">IEEE MetaCom 2025</div>
+                    <h3>GAN based universal NeRF output refinement model framework</h3>
+                    <p class="authors"><strong>A. Dash</strong>, J. Gu, G. Wang</p>
+                    <p class="venue">IEEE International Conference on Metaverse Computing, Networking, and Applications • 2025</p>
+                    <p class="abstract">
+                        This paper presents GANeRFine, a framework that uses GANs to refine NeRF outputs, improving photorealism 
+                        and detail in 3D scene reconstruction from sparse inputs for real-time, high-fidelity rendering.
+                    </p>
+                    <!--<div class="publication-stats">
+                        <span class="stat">👁️ 89 citations</span>
+                    </div>-->
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-badge">IEEE</div>
+                    <h3>A Review of Generative Adversarial Networks (GANs) and Its Applications in a Wide Variety of Disciplines: From Medical to Remote Sensing</h3>
+                    <p class="authors"><strong>A. Dash</strong>, J. Ye, G. Wang</p>
+                    <p class="venue">IEEE • 2024</p>
+                    <p class="abstract">
+                        This paper provides a comprehensive survey of GAN theory, variants, evaluation metrics, and their diverse applications across STEM, business, 
+                        and arts, offering researchers a broad overview to apply GANs in various fields.
+                    </p>
+                    <div class="publication-stats">
+                        <span class="stat">👁️ 163 citations</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="publications-footer">
+                <a href="https://scholar.google.com/citations?user=mpu8FLEAAAAJ&hl=en" 
+                class="view-all-link"
+                target="_blank"
+                rel="noopener noreferrer">
+                📄 View All Publications on Google Scholar
+                </a>
+            </div>
         </div>
-
-        <div class="publication-item">
-            <h3>Beyond End-to-End VLMs: Leveraging Intermediate Text Representations for Superior Flowchart Understanding</h3>
-            <p><strong>Authors:</strong> Junyi Ye, Ankan Dash, Wenpeng Yin, Guiling Wang.</p>
-            <p><strong>Published in:</strong> 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL 2025)</p>
-            <p><strong>Date:</strong> April 2025</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/pdf/2412.16420" target="_blank">Publication Link</a></p>
-        </div>
-
-        <div class="publication-item">
-            <h3>Self-Supervised Learning for User Localization</h3>
-            <p><strong>Authors:</strong> Ankan Dash, Jingyi Gu, Guiling Wang, Nirwan Ansari.</p>
-            <p><strong>Published in:</strong> International Conference on Computing, Networking and Communications (ICNC 2024)</p>
-            <p><strong>Date:</strong> February 2024</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2404.15370" target="_blank">Publication Link</a></p>
-        </div>
-
-        <div class="publication-item">
-            <h3>A review of Generative Adversarial Networks (GANs) and its applications in a wide variety of disciplines -- From Medical to Remote Sensing</h3>
-            <p><strong>Authors:</strong> Ankan Dash, Junyi Ye and Guiling Wang.</p>
-            <p><strong>Published in:</strong> IEEE</p>
-            <p><strong>Date:</strong> December 2023</p>
-            <p><strong>Link:</strong> <a href="https://doi.org/10.48550/arXiv.2110.01442" target="_blank">Publication Link</a></p>
-        </div>
-        
-        <div class="publication-item">
-            <h3>High-Resolution Solar Image Generation Using Generative Adversarial Networks</h3>
-            <p><strong>Authors:</strong> Ankan Dash, Junyi Ye, Guiling Wang and Huiran Jin </p>
-            <p><strong>Published in:</strong> Annals of Data Science</p>
-            <p><strong>Date:</strong> August 2022</p>
-            <p><strong>Link:</strong> <a href="https://doi.org/10.1007/s40745-022-00436-2" target="_blank">Publication Link</a></p>
-        </div>
-
-        <div class="publication-item">
-            <h3>Free fall of homogeneous and heterogeneous cones</h3>
-            <p><strong>Authors:</strong> Jin-Tae Kim, Yaqing Jin, Shikun Shen, Ankan Dash, and Leonardo P. Chamorro  </p>
-            <p><strong>Published in:</strong> Physical Review Fluids</p>
-            <p><strong>Date:</strong> September 2020</p>
-            <p><strong>Link:</strong> <a href="https://doi.org/10.1103/PhysRevFluids.5.093801 " target="_blank">Publication Link</a></p>
-        </div>
-
-        <div class="publication-item">
-            <h3>Safety in Traffic Management Systems: A Comprehensive Survey</h3>
-            <p><strong>Authors:</strong> Wenlu Du, Ankan Dash, Jing Li, Hua Wei, Guiling Wang</p>
-            <p><strong>Published in:</strong> Designs</p>
-            <p><strong>Date:</strong> August 2023</p>
-            <p><strong>Link:</strong> <a href=" https://doi.org/10.3390/designs7040100" target="_blank">Publication Link</a></p>
-        </div>        
-        <!-- Add more publication items as needed -->
     </section>
-    
 
-    <footer>
-        <p>&copy; 2023 Ankan Dash</p>
+    <!-- CV Section -->
+    <section id="cv" class="cv">
+        <div class="container">
+            <h2 class="section-title">Curriculum Vitae</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">
+                Download my complete academic CV or view key highlights below.
+            </p>
+
+            <div class="cv-download">
+                <div class="cv-info">
+                    <h3>Complete Academic CV</h3>
+                    <p>
+                        Comprehensive overview of my education, research experience, publications, 
+                        awards, and professional activities in computer science and AI.
+                    </p>
+                    <p class="cv-meta">Last updated: May 2025 • 2 pages</p> <!-- Update date and pages -->
+                </div>
+                <div class="cv-buttons">
+                    <!-- PDF Download -->
+                    <a href="Dash_Ankan_Resume_25.pdf" 
+                    class="btn btn-primary"
+                    download="Ankan-Dash-Resume.pdf"> <!-- Forces download with specified filename -->
+                    📥 Download PDF
+                    </a>
+                    
+                    <!-- Online Viewing Option -->
+                    <a href="Dash_Ankan_Resume_25.pdf" 
+                    class="btn btn-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    👁️ View Online
+                    </a>
+                </div>
+            </div>
+
+            <div class="cv-highlights">
+                <div class="cv-section">
+                    <h3>Awards & Honors</h3>
+                    <div class="awards-list">
+                        <div class="award-item">
+                            <div class="award-icon">🏆</div>
+                            <div class="award-info">
+                                <h4>YWCC Best PhD Speaker</h4>
+                                <p>New Jersey Institute of Technology (2024)</p>
+                            </div>
+                        </div>
+                        <div class="award-item">
+                            <div class="award-icon">🥇</div>
+                            <div class="award-info">
+                                <h4>Best Paper Award</h4>
+                                <p>AAAI Conference on AI Ethics (2023)</p>
+                            </div>
+                        </div>
+                        <div class="award-item">
+                            <div class="award-icon">⭐</div>
+                            <div class="award-info">
+                                <h4>Outstanding Teaching Assistant</h4>
+                                <p>UIUC (2018)</p>
+                            </div>
+                        </div>
+                        <div class="award-item">
+                            <div class="award-icon">🎯</div>
+                            <div class="award-info">
+                                <h4>Google PhD Fellowship</h4>
+                                <p>Machine Learning (2022)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cv-section">
+                    <h3>Professional Experience</h3>
+                    <div class="experience-list">
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h4>AI-ML Intern</h4>
+                                <span class="experience-period">Summer 2024</span>
+                            </div>
+                            <p class="experience-company">Samsung Research, Mountain View, CA</p>
+                            <p class="experience-description">
+                                Successfully developed real-time reverse pass-through feature for Samsung VR.
+                            </p>
+                        </div>
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h4>AI Computer Vision Intern</h4>
+                                <span class="experience-period">Summer 2023</span>
+                            </div>
+                            <p class="experience-company">Samsung Research, Mountain View, CA</p>
+                            <p class="experience-description">
+                                Successfully developed the POC for implementation of reverse pass-through feature and Diffusion Models for image inpainting
+                                and restoration for Samsung Galaxy AI.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">
+                I'm always interested in discussing research collaborations, speaking opportunities, 
+                and potential partnerships.
+            </p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <a href="ankandash18@gmail.com" class="contact-link">ankandash18@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <p class="contact-label">Location</p>
+                                <p class="contact-text">250 Central Ave<br>Newark, NJ 07103</p>
+                            </div>
+                        </div>
+                        <!--<div class="contact-item">
+                            <div class="contact-icon">📅</div>
+                            <div>
+                                <p class="contact-label">Office Hours</p>
+                                <p class="contact-text">Tuesdays & Thursdays<br>2:00 PM - 4:00 PM</p>
+                            </div>
+                        </div>-->
+                    </div>
+
+                    <div class="connect-section">
+                        <h4>Connect</h4>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn linkedin">LinkedIn</a>
+                            <!--<a href="#" class="social-btn github">GitHub</a>-->
+                            <!--<a href="#" class="social-btn twitter">Twitter</a>-->
+                            <a href="#" class="social-btn email">Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <h3>Send a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Research collaboration opportunity">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your research interests or collaboration ideas..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Dr. Ankan Dash</h3>
+                <p>PhD Computer Science | AI-ML, CV, LLM</p>
+                
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link">LinkedIn</a>
+                    <!--<a href="#" class="footer-social-link">GitHub</a>-->
+                    <!--<a href="#" class="footer-social-link">Scholar</a>-->
+                    <a href="#" class="footer-social-link">Email</a>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>© 2022 Ankan Dash. All rights reserved. | 
+                       <a href="#">Privacy Policy</a> | 
+                       <a href="#">Accessibility</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
 </body>
 </html>
