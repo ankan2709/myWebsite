@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankan Dash - PhD in Computer Science</title>
+    <meta name="description" content="PhD candidate specializing in Machine Learning, Computer Vision and Generative AI. View my research, publications, and academic work.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">Ankan Dash</div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#cv" class="nav-link">CV</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>
+                        <span class="hero-name">Ankan Dash</span>
+                    </h1>
+                    <h2 class="hero-subtitle">PhD - Computer Science</h2>
+                    <p class="hero-description">
+                        Specializing in AI, Deep Learning, Computer Vision, LLMs and Generative AI. 
+                        Passionate about developing AI systems that benefit society while 
+                        advancing the frontiers of computational intelligence.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                    <div class="social-links">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/ankan-dash" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="social-link">LinkedIn</a>
+                        
+                        <!--GitHub
+                        <a href="https://github.com/yourusername" 
+                        target="_blank"
+                        rel="noopener noreferrer" 
+                        class="social-link">GitHub</a>-->
+                        
+                        <!-- Google Scholar -->
+                        <a href="https://scholar.google.com/citations?user=mpu8FLEAAAAJ&hl=en" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="social-link">Scholar</a>
+                        
+                        <!-- Email (doesn't need target="_blank") -->
+                        <a href="ankandash18@gmail.com" class="social-link">Email</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="mypic.jpg" 
+                         alt="Ankan Dash - Professional headshot" 
+                         class="profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="section-divider"></div>
+            
+            <div class="about-content">
+                <div class="education">
+                    <h3>Academic Background</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker teal"></div>
+                            <div class="timeline-content">
+                                <h4>PhD in Computer Science</h4>
+                                <p class="institution">New Jersey Institute of Technology(2020-2025)</p>
+                                <p class="details">Focus: Deep Learning, Computer Vision, Generative AI</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker slate"></div>
+                            <div class="timeline-content">
+                                <h4>M.S. Aerospace Engineering</h4>
+                                <p class="institution">University of Illinois at Urbana-Champaign</p>
+                                <p class="details">Finite Element Methods, CFD models for flow field analysis</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker slate"></div>
+                            <div class="timeline-content">
+                                <h4>B.S. Mechanical Engineering</h4>
+                                <p class="institution">KIIT University</p>
+                                <p class="details">CFD, Machine Learning, FEM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="research-interests">
+                    <h3>Research Interests</h3>
+                    <div class="interests-grid">
+                        <div class="interest-card">
+                            <div class="interest-icon">🤖</div>
+                            <h4>AI & Machine Learning</h4>
+                            <p>Advanced deep learning architectures and optimization</p>
+                        </div>
+                        <div class="interest-card">
+                            <div class="interest-icon">👁️</div>
+                            <h4>Computer Vision</h4>
+                            <p>Diffusion Models, GANs, ViT and 3D Reconstruction</p>
+                        </div>
+                        <div class="interest-card">
+                            <div class="interest-icon">🧬</div>
+                            <h4>Generative AI</h4>
+                            <p>Multimodal generation</p>
+                        </div>
+                        <div class="interest-card">
+                            <div class="interest-icon">🔍</div>
+                            <h4>LLMs</h4>
+                            <p>LLMs and VLMs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">
+                A showcase of my key research and development projects, highlighting practical applications 
+                of my work in computer science and AI.
+            </p>
+
+            <div class="projects-list">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Eye-See-You: Reverse Pass-Through VR with Full Head Avatars</h3>
+                        <p class="project-description">
+                            RevAvatar is an AI-powered framework that enables reverse 
+                            pass-through in VR headsets by reconstructing high-fidelity 
+                            2D facial images and generating accurate 3D head avatars from 
+                            partially visible facial regions. By leveraging advanced generative models, 
+                            RevAvatar enhances visual communication and enables more natural, 
+                            immersive interactions in virtual environments.
+                        </p>
+                        <div class="technologies">
+                            <h4>Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">Diffusion Models</span>
+                                <span class="tech-tag">GANs</span>
+                                <span class="tech-tag">3D Reconstruction</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="project-image">
+                            <img src="media\frameworkNewImage_revavater.png" 
+                                 alt="Framework Architecture">
+                            <div class="image-overlay">Framework Architecture</div>
+                        </div>
+                        <div class="project-image">
+                            <img src="teaserFig.png" 
+                                 alt="Results">
+                            <div class="image-overlay">Results & Visualization</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reverse">
+                    <div class="project-content">
+                        <h3>GANeRFine: Universal GAN based NeRF refinement model</h3>
+                        <p class="project-description">GANeRFine is a hybrid framework that enhances NeRF-based 3D scene 
+                            reconstruction by integrating GANs to improve texture fidelity and fine details, even from sparse inputs. 
+                            Compatible with multiple NeRF variants, it delivers photorealistic results and near real-time performance, making it ideal for 
+                            immersive applications such as virtual environments, avatars, and Metaverse 
+                            content creation.A GAN-based framework designed to enhance the output quality of any NeRF-based model.
+                        </p>
+                        <div class="technologies">
+                            <h4>Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">NeRF</span>
+                                <span class="tech-tag">3D Rendering</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="project-image">
+                            <img src="media\GANxNERF_framework.png" 
+                                 alt="Framework Architecture">
+                            <div class="image-overlay">Framework Architecture</div>
+                        </div>
+                        <div class="project-image">
+                            <img src="media\nerfvsGANimageCrop2.png" 
+                                 alt="Results">
+                            <div class="image-overlay">Results & Visualization</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Apple’s EyeSight feature POC for VR headsets</h3>
+                        <p class="project-description">
+                            During my internship at <strong>Samsung</strong> in 2023 and 2024, I worked on developing a 
+                            novel reverse pass-through system for VR headsets, enabling real-time facial 
+                            reconstruction from occluded views. I also contributed to building 
+                            fast, real-time face swapping and image colorization models, 
+                            as well as diffusion-based models for image inpainting and restoration. 
+                        </p>
+                        <p>
+                        <em>Right image:</em> <strong>(TOP)</strong> Apple's EyeSight vs <strong>(BOTTOM)</strong> my approach output.
+                        </p>
+                        <div class="technologies">
+                            <h4>Technologies Used:</h4>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">Real-time Inference</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-images">
+                        <div class="project-image single-image">
+                            <img src="media\revpass.png" alt="Project Visualization">
+                            <div class="image-overlay">Results & Visualization</div>
+                        </div>
+                    </div>
+                    <!-- <div class="project-images">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300" 
+                                 alt="Framework Architecture">
+                            <div class="image-overlay">Framework Architecture</div>
+                        </div>
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=300" 
+                                 alt="Results">
+                            <div class="image-overlay">Results & Visualization</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="section-divider"></div>
+
+            <div class="publications-list">
+                <div class="publication-card">
+                    <div class="publication-badge">IJCAI 2025</div>
+                    <h3>Eye-See-You: Reverse Pass-Through VR with Full Head Avatars</h3>
+                    <p class="authors"><strong>A. Dash</strong>, J. Gu, G. Wang, C. Chen</p>
+                    <p class="venue">International Joint Conference on Artificial Intelligence (IJCAI) • 2025</p>
+                    <p class="abstract">
+                        This paper presents RevAvatar, a reverse pass-through framework that leverages generative models to reconstruct 
+                        high-fidelity 2D faces and synthesize 3D head avatars from partially occluded inputs in VR, 
+                        enabling more natural social interaction and enhancing immersive communication. 
+                        <!--Our approach combines adversarial training with fairness constraints to ensure equitable AI systems 
+                        across diverse demographic groups.-->
+                    </p>
+                    <!--<div class="publication-stats">
+                        <span class="stat">👁️ 243 citations</span>
+                    </div>-->
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-badge">NAACL 2025</div>
+                    <h3>Beyond End-to-End VLMs: Leveraging Intermediate Text Representations for Superior Flowchart Understanding</h3>
+                    <p class="authors">J. Ye, <strong>A. Dash</strong>, G. Wang, W. Yin</p>
+                    <p class="venue">Nations of the Americas Chapter of the Association for Computational Linguistics (NAACL) • 2025</p>
+                    <p class="abstract">
+                        This paper presents TEXTFLOW, a modular vision-language system that combines VLMs for extracting 
+                        structured text from flowchart images and LLMs for reasoning over the text, enhancing controllability, 
+                        explainability, and overall performance in flowchart understanding.
+                    </p>
+                    <!--<div class="publication-stats">
+                        <span class="stat">👁️ 156 citations</span>
+                    </div>-->
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-badge">IEEE MetaCom 2025</div>
+                    <h3>GAN based universal NeRF output refinement model framework</h3>
+                    <p class="authors"><strong>A. Dash</strong>, J. Gu, G. Wang</p>
+                    <p class="venue">IEEE International Conference on Metaverse Computing, Networking, and Applications • 2025</p>
+                    <p class="abstract">
+                        This paper presents GANeRFine, a framework that uses GANs to refine NeRF outputs, improving photorealism 
+                        and detail in 3D scene reconstruction from sparse inputs for real-time, high-fidelity rendering.
+                    </p>
+                    <!--<div class="publication-stats">
+                        <span class="stat">👁️ 89 citations</span>
+                    </div>-->
+                </div>
+
+                <div class="publication-card">
+                    <div class="publication-badge">IEEE</div>
+                    <h3>A Review of Generative Adversarial Networks (GANs) and Its Applications in a Wide Variety of Disciplines: From Medical to Remote Sensing</h3>
+                    <p class="authors"><strong>A. Dash</strong>, J. Ye, G. Wang</p>
+                    <p class="venue">IEEE • 2024</p>
+                    <p class="abstract">
+                        This paper provides a comprehensive survey of GAN theory, variants, evaluation metrics, and their diverse applications across STEM, business, 
+                        and arts, offering researchers a broad overview to apply GANs in various fields.
+                    </p>
+                    <div class="publication-stats">
+                        <span class="stat">👁️ 163 citations</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="publications-footer">
+                <a href="https://scholar.google.com/citations?user=mpu8FLEAAAAJ&hl=en" 
+                class="view-all-link"
+                target="_blank"
+                rel="noopener noreferrer">
+                📄 View All Publications on Google Scholar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="cv">
+        <div class="container">
+            <h2 class="section-title">Curriculum Vitae</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">
+                Download my complete academic CV or view key highlights below.
+            </p>
+
+            <div class="cv-download">
+                <div class="cv-info">
+                    <h3>Complete Academic CV</h3>
+                    <p>
+                        Comprehensive overview of my education, research experience, publications, 
+                        awards, and professional activities in computer science and AI.
+                    </p>
+                    <p class="cv-meta">Last updated: May 2025 • 2 pages</p> <!-- Update date and pages -->
+                </div>
+                <div class="cv-buttons">
+                    <!-- PDF Download -->
+                    <a href="Dash_Ankan_Resume_25.pdf" 
+                    class="btn btn-primary"
+                    download="Ankan-Dash-Resume.pdf"> <!-- Forces download with specified filename -->
+                    📥 Download PDF
+                    </a>
+                    
+                    <!-- Online Viewing Option -->
+                    <a href="Dash_Ankan_Resume_25.pdf" 
+                    class="btn btn-secondary"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    👁️ View Online
+                    </a>
+                </div>
+            </div>
+
+            <div class="cv-highlights">
+                <div class="cv-section">
+                    <h3>Awards & Honors</h3>
+                    <div class="awards-list">
+                        <div class="award-item">
+                            <div class="award-icon">🏆</div>
+                            <div class="award-info">
+                                <h4>YWCC Best PhD Speaker</h4>
+                                <p>New Jersey Institute of Technology (2024)</p>
+                            </div>
+                        </div>
+                        <div class="award-item">
+                            <div class="award-icon">🥇</div>
+                            <div class="award-info">
+                                <h4>Best Paper Award</h4>
+                                <p>AAAI Conference on AI Ethics (2023)</p>
+                            </div>
+                        </div>
+                        <div class="award-item">
+                            <div class="award-icon">⭐</div>
+                            <div class="award-info">
+                                <h4>Teaching Assistant</h4>
+                                <p>UIUC (2018)</p>
+                            </div>
+                        </div>
+                        <!-- <div class="award-item">
+                            <div class="award-icon">🎯</div>
+                            <div class="award-info">
+                                <h4>Google PhD Fellowship</h4>
+                                <p>Machine Learning (2022)</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="cv-section">
+                    <h3>Professional Experience</h3>
+                    <div class="experience-list">
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h4>AI-ML Intern</h4>
+                                <span class="experience-period">Summer 2024</span>
+                            </div>
+                            <p class="experience-company">Samsung Research, Mountain View, CA</p>
+                            <p class="experience-description">
+                                Successfully developed real-time reverse pass-through feature for Samsung VR.
+                            </p>
+                        </div>
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h4>AI Computer Vision Intern</h4>
+                                <span class="experience-period">Summer 2023</span>
+                            </div>
+                            <p class="experience-company">Samsung Research, Mountain View, CA</p>
+                            <p class="experience-description">
+                                Successfully developed the POC for implementation of reverse pass-through feature and Diffusion Models for image inpainting
+                                and restoration for Samsung Galaxy AI.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">
+                I'm always interested in discussing research collaborations, speaking opportunities, 
+                and potential partnerships.
+            </p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <p class="contact-label">Email</p>
+                                <a href="ankandash18@gmail.com" class="contact-link">ankandash18@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <p class="contact-label">Location</p>
+                                <p class="contact-text">250 Central Ave<br>Newark, NJ 07103</p>
+                            </div>
+                        </div>
+                        <!--<div class="contact-item">
+                            <div class="contact-icon">📅</div>
+                            <div>
+                                <p class="contact-label">Office Hours</p>
+                                <p class="contact-text">Tuesdays & Thursdays<br>2:00 PM - 4:00 PM</p>
+                            </div>
+                        </div>-->
+                    </div>
+
+                    <div class="connect-section">
+                        <h4>Connect</h4>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn linkedin">LinkedIn</a>
+                            <!--<a href="#" class="social-btn github">GitHub</a>-->
+                            <!--<a href="#" class="social-btn twitter">Twitter</a>-->
+                            <a href="#" class="social-btn email">Email</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <h3>Send a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Research collaboration opportunity">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your research interests or collaboration ideas..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>Ankan Dash</h3>
+                <p>PhD Computer Science | AI-ML, CV, LLM</p>
+                
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link">LinkedIn</a>
+                    <!--<a href="#" class="footer-social-link">GitHub</a>-->
+                    <!--<a href="#" class="footer-social-link">Scholar</a>-->
+                    <a href="#" class="footer-social-link">Email</a>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>© 2022 Ankan Dash. All rights reserved. | 
+                       <a href="#">Privacy Policy</a> | 
+                       <a href="#">Accessibility</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
